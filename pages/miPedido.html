@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pedido | Sabor de Pueblo</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+
+    <header class="encabezado-principal">
+        <div class="logoSP-titulo">
+            <a href="/index.html">
+                <img src="/image/LogoSP.png" alt="Logo de Sabor de Pueblo">
+            </a>
+        </div>
+        <h1>MI PEDIDO</h1>
+        <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
+
+        <!-- Menu hamburguesa para responsive -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav class="menu-hamburguesa">
+            <ul>
+                <li><a href="/pages/deliciasSemanales.html">Delicias Semanales</a></li>
+                <li><a href="/pages/comoPedir.html">Cómo hacer un pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">    
+        <main>
+            <nav class="pages">
+                <ul>
+                    <li class="delicias"><a href="/pages/deliciasSemanales.html">Delicias Semanales</a></li>
+                    <li class="comoPedir"><a href="/pages/comoPedir.html">Como hacer un pedido</a></li>
+                    <li class="menu"><a href="/pages/menu.html">Pedir mas</a></li>
+                </ul>
+            </nav>
+
+                <!-- Informacion del Pedido  -->
+            <section class="miPedido-producto">
+                <img src="/image/milanesa.jpg" class="img-fluid rounded" alt="pedido">
+                <section class="infoPedido">
+                <h2>Informacion de Pedido</h2>
+                    <p>Nombre Producto</p>
+                    <p>Cantidad:
+                    <button>-</button>
+                    1
+                    <button>+</button>
+                    </p>
+                    <p>Tiempo de preparacion: 00:35hs</p>
+                    <p>Llega al instante</p>
+                    <p>Precio: $ 3333</p>
+                </section>
+                <p class="numOrden">Orden: #4454</p>
+            </section>
+
+                <!-- Informacion de entrega del Pedido -->
+            <section class="entrega">
+                <section class="infoEntrega">
+                    <h2>Informacion de Entrega</h2>
+                    <form id="formPedido" action="#" method="post">
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+
+                        <label for="numero">Número de Telefono:</label>
+                        <input type="tel" id="numero" name="numero" required><br><br>
+
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required><br><br>
+
+                        <label for="info">Información adicional:</label>
+                        <input type="text" id="info" name="info" required><br><br>
+                </section>
+
+                <section class="metodoEntrega">
+                    <h2>Método de Entrega</h2>
+                        <label>
+                        <input type="radio" name="entrega" value="retiro" required>
+                        Retiro en Ubicación
+                        </label><br>
+                        <label>
+                            <input type="radio" name="entrega" value="envio" required>
+                            Envío a domicilio
+                        </label><br>
+                </section>
+
+                <section class="metodoPago">
+                    <h2>Método de Pago</h2>
+                        <label>
+                            <input type="radio" name="pago" value="efectivo" required>
+                            Efectivo (al recibir)
+                        </label><br>
+                        <label>
+                            <input type="radio" name="pago" value="transferencia" required>
+                            Transferencia
+                        </label><br>    
+                    </form>
+                </section>
+
+            </section>  
+
+            <input class="confirmarPedido" type="submit" form="formPedido" value="CONFIRMAR PEDIDO"> <!-- Boton para confirmar pedido -->
+
+        </main>
+    </div>
+    
+    <footer class="home-footer">
+        <section class="footer-info">
+            <!-- Atajo a numero de whatsApp -->
+            <div class="logoWpp">
+                <img src="/image/Wpp.png" alt="Logo whatsapp">
+                <p class="pediFacil">Pedí fácil y rápido</p>
+            </div>
+            <p class="marca">&copy; GenaGarciaSS</p>
+        </section>
+        <section class="footer-redes">
+            <p>Seguinos en nuestras redes y enterate de todo!</p>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com">
+                        <img src="/image/Fb.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="/image/Instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com">
+                        <img src="/image/TikTok.png" alt="Tik Tok">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-hamburguesa');
+            menu.classList.toggle('visible');
+        }
+    </script>
+</body>
+</html>
