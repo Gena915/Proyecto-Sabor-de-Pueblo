@@ -1,0 +1,46 @@
+.custom-navbar {
+    .container-fluid {
+        display: flex;
+            .navbar-toggler {
+                display: none;
+                font-size: 20px;
+                background: none;
+                border: none;
+                top: 10px;
+                right: 15px;
+                cursor: pointer;
+            }
+            .navbar-collapse {
+                display: none;
+                background-color: rgb(211, 208, 199);
+                position: absolute;
+                top: 45px;
+                right: 10px;
+                padding: 1px 30px 1px 30px;
+                border-radius: 5px;
+                font-weight: bold;
+                text-align: center;
+                .navbar-collapse a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 15px;
+                    .navbar-collapse a:hover {
+                        background-color: rgb(158, 154, 146);
+                        border-radius: 2%;
+                    }
+                }
+                .navbar-nav {
+                    list-style: none;
+                    padding: 0;
+                    .nav-item {
+                        background-color: rgba(156, 155, 153, 0.37);
+                        margin: 2px;
+                        border-radius: 10%;
+                    }
+                    .navbar-collapse.show {
+                        display: block;
+                    }
+                }
+            }
+    }
+}

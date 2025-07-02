@@ -4,173 +4,371 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú | Sabor de Pueblo</title>
-    <link rel="stylesheet" href="/Proyecto-Sabor-de-Pueblo/styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Menú Encabezado -->
     <header class="encabezado-principal">
         <div class="logoSP-titulo">
-            <a href="/Proyecto-Sabor-de-Pueblo/index.html">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/LogoSP.png" alt="Logo de Sabor de Pueblo">
+            <a href="../index.html">
+                <img src="../image/Logo.png" alt="Logo de Sabor de Pueblo">
             </a>
         </div>
         <h1>MENÚ</h1>
-        <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
+
+        <section class="infoMenu">
+            <nav class="navbar navbar custom-navbar">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menuNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/deliciasSemanales.html">Delicias Semanales</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/comoPedir.html">Cómo pedir</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/miPedido.html">Mi Pedido</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contactanos.html">Contactanos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
+        </section>
     </header>
 
-    <!-- Navegacion de categorias en Menú -->
-    <section class="menuPages">
-        <nav class="menu-navegacion">
-            <ul>
-                <li>
-                    <a href="#elaborados">Elaborados</a>
-                </li>
-                <li>
-                    <a href="#rapidos">Rapidos</a>
-                </li>
-                <li>
-                    <a href="#postres">Postres</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="bannerMenu">
+        <!-- Navegacion de categorias en Menú -->
 
-        <nav class="pages">
-            <ul>
-                <li class="comoPedir"><a href="/Proyecto-Sabor-de-Pueblo/pages/comoPedir.html">Como hacer un pedido</a></li>
-                <li class="pedido"><a href="/Proyecto-Sabor-de-Pueblo/pages/miPedido.html">Mi Pedido</a></li>
-            </ul>
-        </nav>
-    </section>
+            <nav class="pages">
+                <ul>
+                    <li class="home"><a href="../index.html">Home</a></li>
+                    <li class="delicias"><a href="../pages/deliciasSemanales.html">Delicias Semanales</a></li>
+                    <li class="comoPedir"><a href="../pages/comoPedir.html">Como hacer un pedido</a></li>
+                    <li class="pedido"><a href="../pages/miPedido.html">Mi Pedido</a></li>
+                </ul>
+            </nav>
 
-    <div class="container">
+            <nav class="menu-navegacion">
+                <ul>
+                    <li>
+                        <a href="#elaborados">Elaborados</a>
+                    </li>
+                    <li>
+                        <a href="#rapidos">Rapidos</a>
+                    </li>
+                    <li>
+                        <a href="#postres">Postres</a>
+                    </li>
+                </ul>
+            </nav>
+    
         <main>
             <!-- Seccion Elaborados -->
             <section id="elaborados">
-                <h2>Elaborados</h2>
-                <button>Filtrar por</button>
+                <h2 class="h2-comidas">Comidas Elaboradas</h2>
+                <button class="filtrar">Filtrar por</button>
                 <section class="menu">
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Criolla.jpg" class="img-fluid rounded" alt="Comida elaborada">
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/Criolla.jpg" class="img-fluid rounded" alt="Comida elaborada">
                         <h3>Bifes a la Criolla</h3>
                         <p>Ubicación: Urquiza 443</p>
                         <p>Por encargo</p>
                         <p>Tiempo de preparacion: 1:30hs</p>
                         <p>Dias disponibles: Sab - Dom</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $10500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
 
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/locro.jpg" class="img-fluid rounded" alt="Comida elaborada">
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/locro.jpg" class="img-fluid rounded" alt="Comida elaborada">
                         <h3>Locro</h3>
                         <p>Ubicación: Entre Ríos: 223</p>
                         <p>Por encargo</p>
                         <p>Tiempo de preparacion: 1:15hs</p>
                         <p>Dias disponibles: Sabado (Mediodia)</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $10500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
 
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/milanesa.jpg" class="img-fluid rounded" alt="Comida elaborada">
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/elaborados1.jpg" class="img-fluid rounded" alt="Comida elaborada">
+                        <h3>Pastas</h3>
+                        <p>Ubicación: Entre Ríos: 223</p>
+                        <p>Por encargo</p>
+                        <p>Tiempo de preparacion: 1:15hs</p>
+                        <p>Dias disponibles: Sabado (Mediodia)</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/milanesa.jpg" class="img-fluid rounded" alt="Comida elaborada">
                         <h3>Milanesa con papas</h3>
                         <p>Ubicación: Santa Fé 333</p>
                         <p>Al momento</p>
                         <p>Tiempo de preparacion: 00:40hs</p>
                         <p>Dias disponibles: Todos</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $10500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+                    
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/elaborados2.jpg" class="img-fluid rounded" alt="Comida elaborada">
+                        <h3>Albondigas</h3>
+                        <p>Ubicación: Entre Ríos: 223</p>
+                        <p>Por encargo</p>
+                        <p>Tiempo de preparacion: 1:15hs</p>
+                        <p>Dias disponibles: Sabado (Mediodia)</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
 
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/elaborados3.jpg" class="img-fluid rounded" alt="Comida elaborada">
+                        <h3>Asado</h3>
+                        <p>Ubicación: Santa Fé 333</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:40hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
 
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/noquis.jpg" class="img-fluid rounded" alt="Comida elaborada">
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/noquis.jpg" class="img-fluid rounded" alt="Comida elaborada">
                         <h3>Ñoquis con tuco</h3>
                         <p>Ubicación: Martin Perego 765</p>
                         <p>Por encargo</p>
                         <p>Tiempo de preparacion: 1:00hs</p>
                         <p>Dias disponibles: Dom (Mediodia)</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $10500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
                 </section>
             </section><br><br>
 
             <!-- Seccion Rapidos -->
             <section id="rapidos">
-                <h2>Rapidos</h2>
-                <button>Filtrar por</button>
+                <h2 class="h2-comidas">Comidas Rapidas</h2>
+                <button class="filtrar">Filtrar por</button>
                 <section class="menu">
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Hamburguesa.png" class="img-fluid rounded" alt="Comida rapida">
-                        <h3>Hamburguesa completa (contenido)</h3>
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/Hamburguesa.png" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Hamburguesa completa</h3>
                         <p>Ubicación: Martin Perego 111</p>
                         <p>Al momento</p>
                         <p>Tiempo de preparacion: 00:25hs</p>
                         <p>Dias disponibles: Todos</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $5500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
 
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/pizza.jpg" class="img-fluid rounded" alt="Comida rapida">
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/pizza.jpg" class="img-fluid rounded" alt="Comida rapida">
                         <h3>Pizza (4 quesos)</h3>
                         <p>Ubicación: San Martin 564</p>
                         <p>Al momento</p>
                         <p>Tiempo de preparacion: 00:30hs</p>
                         <p>Dias disponibles: Todos</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $7500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss1.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Hamburguesa completa</h3>
+                        <p>Ubicación: Martin Perego 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:25hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss2.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Panchos</h3>
+                        <p>Ubicación: San Martin 564</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:30hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss3.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Emparedado</h3>
+                        <p>Ubicación: Martin Perego 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:25hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss5.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Tarta</h3>
+                        <p>Ubicación: San Martin 564</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:30hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss6.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Hamburguesa completa</h3>
+                        <p>Ubicación: Martin Perego 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:25hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
                 </section>
             </section><br><br>
 
             <!-- Seccion Postres -->
             <section id="postres">
-                <h2>Postres</h2>
-                <button>Filtrar por</button>
+                <h2 class="h2-comidas">Postres</h2>
+                <button class="filtrar">Filtrar por</button>
                 <section class="menu">
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/chocotorta.jpg" class="img-fluid rounded" alt="Postres">
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/chocotorta.jpg" class="img-fluid rounded" alt="Postres">
                         <h3>Chocotorta</h3>
                         <p>Ubicación: Urquiza 111</p>
                         <p>Al momento</p>
                         <p>Tiempo de preparacion: 00:20hs</p>
                         <p>Dias disponibles: Todos</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $5500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
 
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/chocotorta.jpg" class="img-fluid rounded" alt="Postres">
-                        <h3>Chocotorta</h3>
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/postress1.jpg" class="img-fluid rounded" alt="Postres">
+                        <h3>Helado copa</h3>
                         <p>Ubicación: Urquiza 111</p>
                         <p>Al momento</p>
                         <p>Tiempo de preparacion: 00:20hs</p>
                         <p>Dias disponibles: Todos</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $5500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
 
-                    <div class="menu-tarjetaComida">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/chocotorta.jpg" class="img-fluid rounded" alt="Postres">
-                        <h3>Chocotorta</h3>
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/postress6.jpg" class="img-fluid rounded" alt="Postres">
+                        <h3>Helado al plato</h3>
                         <p>Ubicación: Urquiza 111</p>
                         <p>Al momento</p>
                         <p>Tiempo de preparacion: 00:20hs</p>
                         <p>Dias disponibles: Todos</p>
                         <p>Info. Adicional...</p>
-                        <p>Precio: $5500</p>
-                        <button>Pedir</button>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/postress3.jpg" class="img-fluid rounded" alt="Postres">
+                        <h3>Postre hogar</h3>
+                        <p>Ubicación: Urquiza 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:20hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/postress4.jpg" class="img-fluid rounded" alt="Postres">
+                        <h3>Galletita con crema</h3>
+                        <p>Ubicación: Urquiza 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:20hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/postress5.jpg" class="img-fluid rounded" alt="Postres">
+                        <h3>Panqueques frutales</h3>
+                        <p>Ubicación: Urquiza 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:20hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
                     </div>
                 </section>
             </section><br>
@@ -182,27 +380,33 @@
         <section class="footer-info">
             <!-- Atajo a numero de whatsApp -->
             <div class="logoWpp">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/Wpp.png" alt="Logo whatsapp">
+                <img src="../image/Wpp.png" alt="Logo whatsapp">
                 <p>Pedí fácil y rápido</p>
             </div>
-            <p class="marca">&copy; GenaGarciaSS</p>
         </section>
+        <p class="marca">&copy; GenaGarciaSS</p>
         <section class="footer-redes">
             <p>Seguinos en nuestras redes y enterate de todo!</p>
             <ul>
                 <li>
                     <a href="https://www.facebook.com">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Fb.png" alt="Facebook">
+                        <img src="../image/Fb.png" alt="Facebook">
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Instagram.png" alt="Instagram">
+                        <img src="../image/Instagram.png" alt="Instagram">
                     </a>
                     <a href="https://www.tiktok.com">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/TikTok.png" alt="Tik Tok">
+                        <img src="../image/TikTok.png" alt="Tik Tok">
                     </a>
                 </li>
             </ul>
         </section>
-    </footer>  
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>  
 </body>
 </html>

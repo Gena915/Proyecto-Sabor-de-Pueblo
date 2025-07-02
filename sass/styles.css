@@ -1,0 +1,878 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.encabezado-principal {
+  min-height: 8dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(209, 199, 187);
+  flex-wrap: wrap;
+}
+.encabezado-principal h1 {
+  font-family: fantasy, sans-serif;
+  font-size: 30px;
+  color: rgb(138, 84, 4);
+}
+.encabezado-principal .logoSP-titulo img {
+  width: 95px;
+  height: auto;
+  border-radius: 10%;
+}
+.encabezado-principal .infoMenu .custom-navbar .container-fluid {
+  display: flex;
+}
+.encabezado-principal .infoMenu .custom-navbar .container-fluid .navbar-toggler {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.encabezado-principal .infoMenu .custom-navbar .container-fluid .navbar-collapse {
+  display: none;
+  background-color: rgb(211, 208, 199);
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  padding: 1px 30px 1px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.encabezado-principal .infoMenu .custom-navbar .container-fluid .navbar-collapse .navbar-collapse a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.encabezado-principal .infoMenu .custom-navbar .container-fluid .navbar-collapse .navbar-collapse a .navbar-collapse a:hover {
+  background-color: rgb(158, 154, 146);
+  border-radius: 2%;
+}
+.encabezado-principal .infoMenu .custom-navbar .container-fluid .navbar-collapse .navbar-nav {
+  list-style: none;
+  padding: 0;
+}
+.encabezado-principal .infoMenu .custom-navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+  background-color: rgba(156, 155, 153, 0.37);
+  margin: 2px;
+  border-radius: 10%;
+}
+.encabezado-principal .infoMenu .custom-navbar .container-fluid .navbar-collapse .navbar-nav .navbar-collapse.show {
+  display: block;
+}
+.encabezado-principal .infoMenu .slogan {
+  color: rgb(141, 110, 9);
+  font-size: 18px;
+}
+
+.home-footer {
+  height: 7dvh;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: rgb(209, 199, 187);
+}
+.home-footer .footer-info {
+  display: flex;
+  font-size: 12px;
+  margin: 5px;
+}
+.home-footer .footer-info img {
+  width: 70px;
+  margin-left: 5px;
+}
+.home-footer .marca {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: rgb(90, 96, 100);
+  justify-content: center;
+}
+.home-footer .footer-redes {
+  display: flex;
+  gap: 10px;
+}
+.home-footer .footer-redes p {
+  font-size: 17px;
+  margin-top: 20px;
+}
+.home-footer .footer-redes ul li .footer-redes li {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+  align-items: center;
+}
+.home-footer .footer-redes ul li .footer-redes li img {
+  width: 40px;
+  margin-top: 7px;
+}
+
+.custom-navbar .container-fluid {
+  display: flex;
+}
+.custom-navbar .container-fluid .navbar-toggler {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.custom-navbar .container-fluid .navbar-collapse {
+  display: none;
+  background-color: rgb(211, 208, 199);
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  padding: 1px 30px 1px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.custom-navbar .container-fluid .navbar-collapse .navbar-collapse a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.custom-navbar .container-fluid .navbar-collapse .navbar-collapse a .navbar-collapse a:hover {
+  background-color: rgb(158, 154, 146);
+  border-radius: 2%;
+}
+.custom-navbar .container-fluid .navbar-collapse .navbar-nav {
+  list-style: none;
+  padding: 0;
+}
+.custom-navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+  background-color: rgba(156, 155, 153, 0.37);
+  margin: 2px;
+  border-radius: 10%;
+}
+.custom-navbar .container-fluid .navbar-collapse .navbar-nav .navbar-collapse.show {
+  display: block;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  row-gap: 100px;
+  margin: 15px 50px;
+}
+.menu .menu-tarjetaComida {
+  width: 450px;
+  height: 500px;
+  padding: 5px;
+  background-color: rgba(180, 165, 140, 0.85);
+  border-radius: 1%;
+  font-weight: bold;
+}
+.menu .menu h3 {
+  font-size: 25px;
+}
+.menu .menu p {
+  font-size: 12px;
+}
+.menu .menu img {
+  width: 57%;
+  height: 48%;
+  border-radius: 3%;
+}
+.menu .comprarMenu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.menu .comprarMenu p {
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(66, 47, 16);
+}
+.menu .comprarMenu button {
+  margin: 5px;
+  padding: 0 8px 0 8px;
+  border-color: rgb(161, 159, 156);
+  background-color: rgb(133, 132, 130);
+}
+
+.menu-navegacion ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 30px;
+}
+.menu-navegacion a {
+  font-size: 20px;
+  padding: 1px;
+  text-decoration: none;
+  color: black;
+  background-color: rgba(190, 189, 176, 0.616);
+}
+.menu-navegacion a :hover {
+  background-color: rgb(138, 128, 117);
+}
+
+.pages ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.pages li {
+  background-color: rgb(199, 166, 125);
+  padding: 1px 2px;
+  border-radius: 10%;
+  margin: 20px;
+}
+.pages a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.pages a :hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.filtrar {
+  margin: 15px 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body .bannerPedir {
+  background-image: url("../image/fondo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .bannerPedir .h2-comoPedir {
+  font-size: 35px;
+  margin-top: 75px;
+  text-align: center;
+  color: rgb(233, 229, 218);
+}
+body .bannerPedir .contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: end;
+  margin-top: 7rem;
+}
+body .bannerPedir .contenido .instrucciones {
+  font-size: 25px;
+}
+body .bannerPedir .contenido .instrucciones h3 {
+  margin-left: 55px;
+  font-size: 35px;
+  color: rgb(192, 186, 169);
+}
+body .bannerPedir .contenido .instrucciones li {
+  margin-top: 10px;
+  background-color: hsl(27, 15%, 52%);
+}
+body .bannerPedir .contenido .videoExplicativo video {
+  background-color: hsl(28, 19%, 50%);
+  padding: 5px;
+  margin-top: 5px;
+  min-width: 50dvh;
+}
+body .bannerPedir .contenido .videoExplicativo h3 {
+  margin-left: 30px;
+  font-size: 35px;
+  color: rgb(192, 186, 169);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body .bannerHome {
+  background-image: url("../image/fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .bannerHome .contactanos {
+  text-align: center;
+  background-color: rgb(175, 169, 152);
+  margin: 4rem 30rem 0 30rem;
+  padding: 10px;
+}
+body .bannerHome .contactanos .redir-whatsapp {
+  color: white;
+  background-color: green;
+  padding: 4px;
+  border-radius: 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body .bannerDelicias {
+  background-image: url("../image/fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .bannerDelicias .h2-delicias {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(231, 225, 210);
+}
+body .bannerDelicias .filtrar {
+  margin: 15px 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  color: black;
+  line-height: 1.5;
+  font-size: 20px;
+}
+body .encabezado-principal {
+  min-height: 8dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(209, 199, 187);
+  flex-wrap: wrap;
+}
+body .encabezado-principal h1 {
+  font-family: fantasy, sans-serif;
+  font-size: 30px;
+  color: rgb(138, 84, 4);
+}
+body .encabezado-principal .logoSP-titulo img {
+  width: 95px;
+  height: auto;
+  border-radius: 10%;
+}
+body .encabezado-principal .infoMenu .encabezado-info a {
+  display: flex;
+  text-decoration: none;
+  margin: 0 10px 10px 0;
+  background-color: rgb(192, 156, 114);
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+body .encabezado-principal .infoMenu .encabezado-info a :hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body .encabezado-principal .infoMenu .encabezado-info ul {
+  list-style: none;
+}
+body .bannerHome {
+  background-image: url("../image/fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .bannerHome .pages ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+body .bannerHome .pages li {
+  background-color: rgb(199, 166, 125);
+  padding: 1px 2px;
+  border-radius: 10%;
+  margin: 20px;
+}
+body .bannerHome .pages a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+body .bannerHome .pages a :hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body .bannerHome .sloganHome {
+  font-family: Fjalla One;
+  color: rgb(233, 229, 218);
+  text-align: center;
+  font-size: 42px;
+  margin-top: 80px;
+}
+body .bannerHome .categorias {
+  margin-top: 50px;
+  padding: 10px 20px;
+  display: grid;
+}
+body .bannerHome .categorias ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+}
+body .bannerHome .categorias li {
+  width: 400px;
+  text-align: center;
+  padding: 15px;
+}
+body .bannerHome .categorias li .card-categorias {
+  background-color: rgb(175, 169, 152);
+  border-radius: 4%;
+  padding: 10px;
+}
+body .bannerHome .categorias li p {
+  font-size: 19px;
+  color: rgb(58, 42, 22);
+}
+body .bannerHome .categorias a {
+  display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  margin: 20px 0px;
+  text-decoration: none;
+  color: rgb(88, 78, 62);
+}
+body .bannerHome .categorias img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body .bannerMenu {
+  background-image: url("../image/fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .bannerMenu #elaborados .h2-comidas {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(231, 225, 210);
+}
+body .bannerMenu #rapidos .h2-comidas {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(231, 225, 210);
+}
+body .bannerMenu #postres .h2-comidas {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(231, 225, 210);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body .bannerPedidos {
+  background-image: url("../image/fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .bannerPedidos .miPedido-producto {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgba(231, 227, 211, 0.623);
+  font-weight: bold;
+}
+body .bannerPedidos .miPedido-producto img {
+  width: 25%;
+  height: auto;
+  border-radius: 1%;
+}
+body .bannerPedidos .miPedido-producto .infoPedido {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+body .bannerPedidos .miPedido-producto .infoPedido .numOrden {
+  text-align: right;
+  font-size: 15px;
+  margin: 40px;
+}
+body .bannerPedidos .miPedido-producto .infoPedido p {
+  font-size: 20px;
+}
+body .bannerPedidos .entrega {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .bannerPedidos .entrega .infoEntrega, body .bannerPedidos .entrega .metodoEntrega, body .bannerPedidos .entrega .metodoPago {
+  background-color: rgba(231, 227, 211, 0.623);
+  padding: 5px;
+}
+body .bannerPedidos .entrega .infoEntrega .infoEntrega h2, body .bannerPedidos .entrega .infoEntrega .metodoEntrega h2, body .bannerPedidos .entrega .infoEntrega .metodoPago h2, body .bannerPedidos .entrega .metodoEntrega .infoEntrega h2, body .bannerPedidos .entrega .metodoEntrega .metodoEntrega h2, body .bannerPedidos .entrega .metodoEntrega .metodoPago h2, body .bannerPedidos .entrega .metodoPago .infoEntrega h2, body .bannerPedidos .entrega .metodoPago .metodoEntrega h2, body .bannerPedidos .entrega .metodoPago .metodoPago h2 {
+  color: black;
+}
+body .bannerPedidos .entrega .infoEntrega .formPedido .infoEntrega label, body .bannerPedidos .entrega .infoEntrega .formPedido .metodoEntrega label, body .bannerPedidos .entrega .infoEntrega .formPedido .metodoPago label, body .bannerPedidos .entrega .metodoEntrega .formPedido .infoEntrega label, body .bannerPedidos .entrega .metodoEntrega .formPedido .metodoEntrega label, body .bannerPedidos .entrega .metodoEntrega .formPedido .metodoPago label, body .bannerPedidos .entrega .metodoPago .formPedido .infoEntrega label, body .bannerPedidos .entrega .metodoPago .formPedido .metodoEntrega label, body .bannerPedidos .entrega .metodoPago .formPedido .metodoPago label {
+  font-size: 20px;
+  font-weight: bold;
+}
+body .bannerPedidos .entrega .confirmarPedido {
+  margin-top: 30px;
+  padding: 20px;
+}
+body .bannerPedidos .entrega .confirmarPedido .confirmarPedido input {
+  font-size: 20px;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body .bannerNosotros {
+  background-image: url("../image/fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .bannerNosotros .contenido-nosotros {
+  background-color: rgba(255, 228, 196, 0.712);
+  color: rgb(66, 65, 64);
+  text-align: center;
+  margin: 60px 40px 40px 40px;
+  padding: 10px;
+}
+body .bannerNosotros .contenido-nosotros h2 {
+  font-size: 35px;
+  color: rgb(63, 55, 43);
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1300px) {
+  .navbar-toggler {
+    display: flex;
+  }
+  .encabezado-principal {
+    justify-content: center;
+  }
+  .encabezado-principal .encabezado-info, .encabezado-principal .pages, .encabezado-principal .slogan {
+    display: none;
+  }
+  .sloganHome {
+    font-size: 25px;
+  }
+  .categorias {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
+  .home-footer {
+    height: 7dvh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e8dfd4;
+    text-align: center;
+  }
+  .home-footer .footer-redes p {
+    display: none;
+  }
+  .slogan, .pages {
+    display: none;
+  }
+  .bannerPedir {
+    align-items: center;
+  }
+  .bannerPedir .h2-comoPedir {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .bannerPedir .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+  .bannerPedir .contenido .instrucciones {
+    font-size: 20px;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  .bannerPedir .contenido .instrucciones h3 {
+    font-size: 25px;
+  }
+  .bannerPedir .contenido .videoExplicativo h3 {
+    font-size: 25px;
+    justify-content: center;
+  }
+  .contactanos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .h2-delicias {
+    font-size: 20px;
+  }
+  .filtrar {
+    font-size: 13px;
+  }
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  .menu .menu-tarjetaComida {
+    width: 360px;
+    height: 410px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  .menu .menu img {
+    width: 52%;
+    height: 43%;
+    border-radius: 3%;
+  }
+  .menu .menu h3 {
+    font-size: 22px;
+  }
+  .menu .menu p {
+    font-size: 11px;
+  }
+  .menu .comprarMenu .comprarMenu p {
+    font-size: 21px;
+  }
+  .menu .comprarMenu .comprarMenu button {
+    margin-bottom: 15px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .navbar-toggler {
+    display: flex;
+  }
+  /* Home */
+  .encabezado-principal {
+    justify-content: center;
+  }
+  .encabezado-principal .encabezado-principal h1 {
+    font-size: 27px;
+  }
+  .encabezado-principal .encabezado-info, .encabezado-principal .pages {
+    display: none;
+  }
+  .sloganHome {
+    font-size: 25px;
+  }
+  .categorias {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
+  .home-footer {
+    height: 7dvh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e8dfd4;
+    text-align: center;
+  }
+  .home-footer .footer-redes p {
+    display: none;
+  }
+  /* Como Pedir */
+  .slogan, .pages {
+    display: none;
+  }
+  .bannerPedir {
+    align-items: center;
+  }
+  .bannerPedir .h2-comoPedir {
+    font-size: 22px;
+  }
+  .bannerPedir .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+  .bannerPedir .contenido .instrucciones {
+    font-size: 15px;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  .bannerPedir .contenido .instrucciones .instrucciones h3 {
+    font-size: 20px;
+  }
+  .bannerPedir .contenido .videoExplicativo .videoExplicativo h3 {
+    font-size: 20px;
+    justify-content: center;
+  }
+  .bannerPedir .contenido .videoExplicativo .videoExplicativo video {
+    min-width: 42dvh;
+  }
+  /* Contactanos */
+  .contactanos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  /* Delicias Semanales */
+  .h2-delicias {
+    font-size: 20px;
+  }
+  .filtrar {
+    font-size: 13px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  .menu .menu-tarjetaComida {
+    width: 100%;
+    height: 410px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  .menu .menu img {
+    width: 59%;
+    height: 43%;
+    border-radius: 3%;
+  }
+  .menu .menu h3 {
+    font-size: 22px;
+  }
+  .menu .menu p {
+    font-size: 11px;
+  }
+  .menu .comprarMenu p {
+    font-size: 21px;
+  }
+  .menu .comprarMenu button {
+    margin-bottom: 15px;
+  }
+  /* Menu */
+  .menu-navegacion a {
+    font-size: 15px;
+    margin-top: 1px;
+  }
+  .h2-comidas {
+    text-align: center;
+    font-size: 25px;
+  }
+  /* Mi Pedido */
+  .miPedido-producto {
+    flex-direction: column;
+    margin: 10px;
+    width: auto;
+    height: 400px;
+  }
+  .miPedido-producto .infoPedido {
+    padding: 0px;
+  }
+  .miPedido-producto .miPedido-producto img {
+    width: 40%;
+  }
+  .miPedido-producto .miPedido-producto p {
+    font-size: 15px;
+  }
+  .miPedido-producto .numOrden {
+    color: rgb(78, 70, 43);
+    text-align: start;
+    margin: 5px;
+  }
+  .entrega {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 10px;
+    padding: 5px;
+    gap: 7px;
+  }
+  .entrega .infoEntrega, .entrega .metodoEntrega, .entrega .metodoPago {
+    background-color: rgba(233, 231, 226, 0.685);
+    padding: 45px;
+  }
+  .entrega .infoEntrega .h2, .entrega .infoEntrega h2, .entrega .infoEntrega h2, .entrega .metodoEntrega .h2, .entrega .metodoEntrega h2, .entrega .metodoEntrega h2, .entrega .metodoPago .h2, .entrega .metodoPago h2, .entrega .metodoPago h2 {
+    color: black;
+    margin-bottom: 30px;
+  }
+  .entrega .infoEntrega label, .entrega .infoEntrega label, .entrega .infoEntrega label, .entrega .metodoEntrega label, .entrega .metodoEntrega label, .entrega .metodoEntrega label, .entrega .metodoPago label, .entrega .metodoPago label, .entrega .metodoPago label {
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+  }
+  .confirmarPedido {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .confirmarPedido .confirmarPedido input {
+    font-size: 15px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

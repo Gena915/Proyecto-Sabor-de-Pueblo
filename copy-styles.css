@@ -1,0 +1,891 @@
+/* Reset basico para comenzar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body { 
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+body { 
+    color: black;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.encabezado-principal {
+    min-height: 8dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(209, 199, 187);
+    flex-wrap: wrap;
+}
+
+.encabezado-principal h1 {
+    font-family:fantasy, sans-serif;
+    font-size: 30px;
+    color: rgb(138, 84, 4);
+}
+
+.logoSP-titulo img {
+    width: 95px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.encabezado-info a {
+    display: flex;
+    text-decoration: none;
+    margin: 0 10px 10px 0;
+    background-color: rgb(192, 156, 114);
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.encabezado-info a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.encabezado-info ul {
+    list-style: none;
+}
+
+.bannerHome {
+    background-image: url('../image/fondo1.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+.pages ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.pages li {
+    background-color: rgb(199, 166, 125);
+    padding: 1px 2px;
+    border-radius: 10%;
+    margin: 20px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}  
+
+.pages a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sloganHome {
+    font-family: Fjalla One;
+    color:rgb(233, 229, 218);
+    text-align: center;
+    font-size: 42px;
+    margin-top: 80px;
+}
+
+.categorias {
+    margin-top: 50px;
+    padding: 10px 20px;
+    display: grid;
+}
+
+.card-categorias {
+    background-color: rgb(175, 169, 152);
+    border-radius: 4%;
+    padding: 10px;
+}
+
+.categorias ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.categorias li {
+    width: 400px;
+    text-align: center;
+    padding: 15px;
+}
+
+.categorias li p {
+    font-size: 19px;
+    color: rgb(58, 42, 22);
+}
+
+.categorias a {
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    margin: 20px 0px;
+    text-decoration: none;
+    color: rgb(88, 78, 62);
+}
+
+.categorias img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.home-footer {
+    height: 7dvh;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgb(209, 199, 187);
+}
+
+.footer-info {
+    display: flex;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.footer-info img {
+    width: 70px;
+    margin-left: 5px;
+}
+
+.marca {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
+    color:rgb(90, 96, 100);
+    justify-content: center;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-redes li {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.footer-redes p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.footer-redes li img {
+    width: 40px;
+    margin-top: 7px;
+}
+
+/* Delicias Semanales */
+
+.bannerDelicias {
+    background-image: url('../image/fondo1.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+.slogan {
+    color: rgb(141, 110, 9);
+    font-size: 18px;
+}
+
+.h2-delicias {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(231, 225, 210);
+}
+
+.filtrar {
+    margin: 15px 50px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    row-gap: 100px;
+    margin: 15px 50px;
+}
+
+.menu-tarjetaComida {
+    width: 450px;
+    height: 500px;
+    padding: 5px;
+    background-color: rgba(180, 165, 140, 0.85);
+    border-radius: 1%;
+    font-weight: bold;
+}
+
+.menu h3 {
+    font-size: 25px;
+}
+.menu p {
+    font-size: 12px;
+}
+
+.menu img {
+    width: 57%;
+    height: 48%;
+    border-radius: 3%;
+}
+
+.comprarMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.comprarMenu p {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(66, 47, 16);
+}
+
+.comprarMenu button {
+    margin: 5px;
+    padding: 0 8px 0 8px;
+    border-color: rgb(161, 159, 156);
+    background-color: rgb(133, 132, 130);
+}
+
+
+/* Menu (Elaborados - Rapidos - Postres) */
+
+.bannerHome {
+    background-image: url('../image/fondo1.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+.filtrar {
+    margin: 15px 50px;
+}
+
+.h2-comidas {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(231, 225, 210);
+}
+
+.menu-navegacion a{
+    font-size: 20px;
+    padding: 1px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(190, 189, 176, 0.616);
+}
+
+.menu-navegacion ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 30px;
+
+}
+
+.menu-navegacion a:hover {
+    background-color: rgb(138, 128, 117);
+}
+
+
+
+
+/* Como Pedir */
+
+.bannerPedir {
+    background-image: url('../image/fondo2.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: end;
+    margin-top: 7rem;
+}
+
+.h2-comoPedir {
+    font-size: 35px;
+    margin-top: 75px;
+    text-align: center;
+    color: rgb(233, 229, 218);
+}
+
+.instrucciones {
+    font-size: 25px;
+}
+
+.instrucciones h3 {
+    margin-left: 55px;
+    font-size: 35px;
+    color: rgb(192, 186, 169);
+}
+
+.instrucciones li {
+    margin-top: 10px;
+    background-color:hsl(27, 15%, 52%); 
+} 
+
+.videoExplicativo video {
+    background-color:hsl(28, 19%, 50%);
+    padding: 5px;
+    margin-top: 5px;
+    min-width: 50dvh;
+}
+
+.videoExplicativo h3 {
+    margin-left: 30px;
+    font-size: 35px;
+    color: rgb(192, 186, 169);
+}
+
+
+
+/* Mi Pedido */
+
+.bannerPedidos {
+    background-image: url('../image/fondo1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+.entrega {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.miPedido-producto {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(231, 227, 211, 0.623);
+    font-weight: bold;
+}
+
+.miPedido-producto p {
+    font-size: 20px;
+}
+
+.miPedido-producto img {
+    width: 300px;
+    border-radius: 1%;
+}
+
+.infoPedido {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+} 
+
+.numOrden {
+    text-align: right;
+    font-size: 15px;
+    margin:40px;
+}
+
+.infoEntrega, .metodoEntrega, .metodoPago {
+    background-color: rgba(231, 227, 211, 0.623);
+    padding: 5px;
+}
+
+.infoEntrega h2, .metodoEntrega h2, .metodoPago h2 {
+    color: black;
+}
+
+.infoEntrega label, .metodoEntrega label, .metodoPago label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.confirmarPedido {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.confirmarPedido input {
+    font-size: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contactanos */
+
+.contactanos {
+    text-align: center;
+    background-color: rgb(175, 169, 152);
+    margin: 4rem 30rem 0 30rem;
+    padding: 10px;
+} 
+
+
+
+.redir-whatsapp {
+    color: white;
+    background-color: green;
+    padding: 4px;
+    border-radius: 5%;
+} 
+
+/* Sobre Nosotros */
+.bannerNosotros {
+    background-image: url('../image/fondo1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+.contenido-nosotros {
+    background-color: rgba(255, 228, 196, 0.712);
+    color: rgb(66, 65, 64);
+    text-align: center;
+    margin: 60px 40px 40px 40px;
+    padding: 10px;
+}
+
+.contenido-nosotros h2 {
+    font-size: 35px;
+    color: rgb(63, 55, 43);
+    font-weight: bold;
+} 
+
+/* Menu Hamburguesa  */
+
+.infoMenu {
+    display: flex;
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.navbar-collapse {
+    display: none;
+    background-color: rgb(211, 208, 199);
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    padding: 1px 30px 1px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-collapse a:hover {
+    background-color: rgb(158, 154, 146);
+    border-radius: 2%;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    background-color: rgba(156, 155, 153, 0.37);
+    margin: 2px;
+    border-radius: 10%;
+}
+
+.navbar-collapse a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.navbar-collapse.show {
+    display: block;
+}
+
+
+/* Responsive */ 
+@media(max-width: 1300px) {
+    .navbar-toggler {
+        display: flex;
+    }
+
+    /* Home */
+
+    .encabezado-principal {
+        justify-content: center;
+    }
+
+    .encabezado-info, .pages, .slogan {
+        display: none;
+    }
+
+    .sloganHome {
+        font-size: 25px;
+    }
+
+    .categorias {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+    }
+
+    .home-footer {
+        height: 7dvh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #e8dfd4;
+        text-align: center;
+    }
+
+    .footer-redes p {
+        display: none;
+    }
+
+    /* Como Pedir */
+
+    .slogan, .pages {
+        display: none;
+    }
+
+    .bannerPedir {
+        align-items: center;
+    }
+
+    .h2-comoPedir {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        gap: 3rem;
+    }
+
+    .instrucciones {
+        font-size: 20px;
+        justify-content: center;
+        margin-right: 15px;
+    }
+
+    .instrucciones h3 {
+        font-size: 25px;
+    }
+
+    .videoExplicativo h3 {
+        font-size: 25px;
+        justify-content: center;
+    }
+
+    /* Contactanos */
+
+    .contactanos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* Delicias Semanales */
+
+    .h2-delicias {
+        font-size: 20px;
+    }
+
+    .filtrar {
+        font-size: 13px;
+    }
+
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        row-gap: 30px;
+        justify-content: center;
+    }
+
+    .menu-tarjetaComida {
+        width: 360px;
+        height: 410px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    .menu img {
+        width: 52%;
+        height: 43%;
+        border-radius: 3%;
+    }
+
+    .menu h3 {
+        font-size: 22px;
+    }
+
+    .menu p {
+        font-size: 11px;
+    }
+
+    .comprarMenu p {
+        font-size: 21px;
+    }
+
+    .comprarMenu button {
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
+@media(max-width: 600px) {
+    .navbar-toggler {
+        display: flex;
+    }
+
+    /* Home */
+
+    .encabezado-principal {
+        justify-content: center;
+    }
+
+    .encabezado-principal h1 {
+        font-size: 27px;
+    }
+
+    .encabezado-info, .pages {
+        display: none;
+    }
+
+    .sloganHome {
+        font-size: 25px;
+    }
+
+    .categorias {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+    }
+
+    .home-footer {
+        height: 7dvh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #e8dfd4;
+        text-align: center;
+    }
+
+    .footer-redes p {
+        display: none;
+    }
+
+    /* Como Pedir */
+
+    .slogan, .pages {
+        display: none;
+    }
+
+    .bannerPedir {
+        align-items: center;
+    }
+
+    .h2-comoPedir {
+        font-size: 22px;
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        gap: 3rem;
+    }
+
+    .instrucciones {
+        font-size: 15px;
+        justify-content: center;
+        margin-right: 15px;
+    }
+
+    .instrucciones h3 {
+        font-size: 20px;
+    }
+
+    .videoExplicativo h3 {
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .videoExplicativo video {
+        min-width: 42dvh;
+    }
+
+    /* Contactanos */
+
+    .contactanos {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    /* Delicias Semanales */
+
+    .h2-delicias {
+        font-size: 20px;
+    }
+
+    .filtrar {
+        font-size: 13px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+    }
+
+    .menu-tarjetaComida {
+        width: 100%;
+        height: 410px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    .menu img {
+        width: 59%;
+        height: 43%;
+        border-radius: 3%;
+    }
+
+    .menu h3 {
+        font-size: 22px;
+    }
+
+    .menu p {
+        font-size: 11px;
+    }
+
+    .comprarMenu p {
+        font-size: 21px;
+    }
+
+    .comprarMenu button {
+        margin-bottom: 15px;
+    }
+
+    /* Menu */
+
+    .menu-navegacion a{
+        font-size: 15px;
+        margin-top: 1px;
+    }
+
+    .h2-comidas {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /* Mi Pedido */
+
+    .miPedido-producto {
+        flex-direction: column;
+        margin: 10px;
+        width: auto;
+        height: 400px;
+    }
+
+    .infoPedido {
+        padding: 0px;
+    }
+
+    .miPedido-producto img {
+        width: 40%;
+    }
+
+    .miPedido-producto p {
+        font-size: 15px;
+    }
+
+    .numOrden {
+        color: rgb(78, 70, 43);
+        text-align: start;
+        margin: 5px;
+    }
+
+    .entrega {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 10px;
+        padding: 5px;
+        gap: 7px
+    }
+
+    .infoEntrega {
+        background-color: rgba(233, 231, 226, 0.685);
+        padding: 45px;
+    }
+
+    .metodoEntrega {
+        background-color: rgba(233, 231, 226, 0.685);
+        padding: 45px;
+    }
+
+    .metodoPago {
+        background-color: rgba(233, 231, 226, 0.685);
+        padding: 45px;
+    }
+
+    .infoEntrega h2, .metodoEntrega h2, .metodoPago h2 {
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    .infoEntrega label, .metodoEntrega label, .metodoPago label {
+        font-size: 20px;
+        color: rgb(44, 44, 44);
+    }
+
+    .confirmarPedido {
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .confirmarPedido input {
+        font-size: 15px;
+        width: 100%;
+    }
+
+}   
+

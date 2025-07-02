@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    // header
+    .bannerPedidos {
+        background-image: url('../image/fondo1.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        // pages
+        .miPedido-producto {
+            display: flex;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(231, 227, 211, 0.623);
+            font-weight: bold;
+            img {
+                width: 25%;
+                height: auto;
+                border-radius: 1%;
+            }
+            .infoPedido {
+                display: block;
+                margin: 10px;
+                padding: 10px;
+                .numOrden {
+                    text-align: right;
+                    font-size: 15px;
+                    margin:40px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            } 
+        }
+        .entrega {
+            display: flex;
+            justify-content: space-evenly;
+            .infoEntrega, .metodoEntrega, .metodoPago {
+                background-color: rgba(231, 227, 211, 0.623);
+                padding: 5px;
+                .infoEntrega h2, .metodoEntrega h2, .metodoPago h2 {
+                    color: black;
+                }
+                .formPedido {
+                    .infoEntrega label, .metodoEntrega label, .metodoPago label {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .confirmarPedido {
+                margin-top: 30px;
+                padding: 20px;
+                .confirmarPedido input {
+                    font-size: 20px;
+                    padding: 10px;
+                    background-color: green;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

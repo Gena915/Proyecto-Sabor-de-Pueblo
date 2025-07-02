@@ -4,45 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pedido | Sabor de Pueblo</title>
-    <link rel="stylesheet" href="/Proyecto-Sabor-de-Pueblo/styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
 
     <header class="encabezado-principal">
         <div class="logoSP-titulo">
-            <a href="/Proyecto-Sabor-de-Pueblo/index.html">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/LogoSP.png" alt="Logo de Sabor de Pueblo">
+            <a href="../index.html">
+                <img src="../image/Logo.png" alt="Logo de Sabor de Pueblo">
             </a>
         </div>
         <h1>MI PEDIDO</h1>
-        <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
 
-        <!-- Menu hamburguesa para responsive -->
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <section class="infoMenu">
+            <nav class="navbar navbar custom-navbar">
+                <div class="container-fluid">
 
-        <nav class="menu-hamburguesa">
-            <ul>
-                <li><a href="/Proyecto-Sabor-de-Pueblo/pages/deliciasSemanales.html">Delicias Semanales</a></li>
-                <li><a href="/Proyecto-Sabor-de-Pueblo/pages/comoPedir.html">Cómo hacer un pedido</a></li>
-            </ul>
-        </nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menuNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/deliciasSemanales.html">Delicias Semanales</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/menu.html">Pedir mas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/comoPedir.html">Cómo pedir</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contactanos.html">Contactanos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
+        </section>
+
     </header>
 
-    <div class="container">    
+    <div class="bannerPedidos">    
         <main>
             <nav class="pages">
                 <ul>
-                    <li class="delicias"><a href="/Proyecto-Sabor-de-Pueblo/pages/deliciasSemanales.html">Delicias Semanales</a></li>
-                    <li class="comoPedir"><a href="/Proyecto-Sabor-de-Pueblo/pages/comoPedir.html">Como hacer un pedido</a></li>
-                    <li class="menu"><a href="/Proyecto-Sabor-de-Pueblo/pages/menu.html">Pedir mas</a></li>
+                    <li class="home"><a href="../index.html">Home</a></li>
+                    <li class="delicias"><a href="../pages/deliciasSemanales.html">Delicias Semanales</a></li>
+                    <li class="comoPedir"><a href="../pages/comoPedir.html">Como hacer un pedido</a></li>
+                    <li class="menu-original"><a href="../pages/menu.html">Pedir mas</a></li>
                 </ul>
             </nav>
 
                 <!-- Informacion del Pedido  -->
             <section class="miPedido-producto">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/milanesa.jpg" class="img-fluid rounded" alt="pedido">
+                <img src="../image/milanesa.jpg" class="img-fluid rounded" alt="pedido">
                 <section class="infoPedido">
-                <h2>Informacion de Pedido</h2>
+                    <p class="numOrden">Orden: #4454</p>
+                    <h2>Informacion de Pedido</h2>
                     <p>Nombre Producto</p>
                     <p>Cantidad:
                     <button>-</button>
@@ -53,7 +70,6 @@
                     <p>Llega al instante</p>
                     <p>Precio: $ 3333</p>
                 </section>
-                <p class="numOrden">Orden: #4454</p>
             </section>
 
                 <!-- Informacion de entrega del Pedido -->
@@ -98,46 +114,15 @@
                         </label><br>    
                     </form>
                 </section>
-
             </section>  
-
-            <input class="confirmarPedido" type="submit" form="formPedido" value="CONFIRMAR PEDIDO"> <!-- Boton para confirmar pedido -->
-
+            
+            <section class="confirmarPedido">
+                <input type="submit" form="formPedido" value="CONFIRMAR PEDIDO"> <!-- Boton para confirmar pedido -->
+            </section>
+            
         </main>
     </div>
-    
-    <footer class="home-footer">
-        <section class="footer-info">
-            <!-- Atajo a numero de whatsApp -->
-            <div class="logoWpp">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/Wpp.png" alt="Logo whatsapp">
-                <p class="pediFacil">Pedí fácil y rápido</p>
-            </div>
-            <p class="marca">&copy; GenaGarciaSS</p>
-        </section>
-        <section class="footer-redes">
-            <p>Seguinos en nuestras redes y enterate de todo!</p>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Fb.png" alt="Facebook">
-                    </a>
-                    <a href="https://www.instagram.com/">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Instagram.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.tiktok.com">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/TikTok.png" alt="Tik Tok">
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu-hamburguesa');
-            menu.classList.toggle('visible');
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

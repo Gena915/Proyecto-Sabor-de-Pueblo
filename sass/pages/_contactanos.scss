@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    // header 
+    .bannerHome {
+        background-image: url('../image/fondo1.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        // pages
+        .contactanos {
+            text-align: center;
+            background-color: rgb(175, 169, 152);
+            margin: 4rem 30rem 0 30rem;
+            padding: 10px;
+            .redir-whatsapp {
+                color: white;
+                background-color: green;
+                padding: 4px;
+                border-radius: 5%;
+            } 
+        } 
+    }
+    // footer
+}

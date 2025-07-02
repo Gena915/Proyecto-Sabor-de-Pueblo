@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@media(max-width: 1300px) {
+    .navbar-toggler {
+        display: flex;
+    }
+    .encabezado-principal {
+        justify-content: center;
+        .encabezado-info, .pages, .slogan {
+            display: none;
+        }
+    }
+    .sloganHome {
+        font-size: 25px;
+    }
+    .categorias {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+    }
+    .home-footer {
+        height: 7dvh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #e8dfd4;
+        text-align: center;
+        .footer-redes p {
+            display: none;
+        }
+    }
+    .slogan, .pages {
+        display: none;
+    }
+    .bannerPedir {
+        align-items: center;
+        .h2-comoPedir {
+            font-size: 25px;
+            margin-top: 15px;
+        }
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+            gap: 3rem;
+            .instrucciones {
+                font-size: 20px;
+                justify-content: center;
+                margin-right: 15px;
+                h3 {
+                    font-size: 25px;
+                }
+            }
+            .videoExplicativo {
+                h3 {
+                    font-size: 25px;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .contactanos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .h2-delicias {
+        font-size: 20px;
+    }
+    .filtrar {
+        font-size: 13px;
+    }
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        row-gap: 30px;
+        justify-content: center;
+        .menu-tarjetaComida {
+            width: 360px;
+            height: 410px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        .menu img {
+            width: 52%;
+            height: 43%;
+            border-radius: 3%;
+        }
+        .menu h3 {
+            font-size: 22px;
+        }
+
+        .menu p {
+            font-size: 11px;
+        }
+        .comprarMenu {
+            .comprarMenu p {
+                font-size: 21px;
+            }
+
+            .comprarMenu button {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+}

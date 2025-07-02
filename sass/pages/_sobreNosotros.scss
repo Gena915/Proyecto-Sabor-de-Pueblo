@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    // header
+    .bannerNosotros {
+        background-image: url('../image/fondo1.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        // pages
+        .contenido-nosotros {
+            background-color: rgba(255, 228, 196, 0.712);
+            color: rgb(66, 65, 64);
+            text-align: center;
+            margin: 60px 40px 40px 40px;
+            padding: 10px;
+            h2 {
+                font-size: 35px;
+                color: rgb(63, 55, 43);
+                font-weight: bold;
+            } 
+        }
+    }
+    // footer
+}

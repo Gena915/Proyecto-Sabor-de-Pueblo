@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicias Semanales | Sabor de Pueblo</title>
-    <link rel="stylesheet" href="/Proyecto-Sabor-de-Pueblo/styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
     
@@ -12,110 +15,206 @@
         <!-- Encabezado Principal -->
     <header class="encabezado-principal">
         <div class="logoSP-titulo">
-            <a href="/Proyecto-Sabor-de-Pueblo/index.html">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/LogoSP.png" alt="Logo de Sabor de Pueblo">
+            <a href="../index.html">
+                <img src="../image/Logo.png" alt="Logo de Sabor de Pueblo">
             </a>
         </div>
         <h1>DELICIAS SEMANALES</h1>
-        <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
+
+        <section class="infoMenu">
+            <nav class="navbar navbar custom-navbar">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menuNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/menu.html">Menú</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/comoPedir.html">Cómo pedir</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/miPedido.html">Mi Pedido</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contactanos.html">Contactanos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
+        </section>
     </header>
 
-    <div class="container">
+    <div class="bannerDelicias">
+        <nav class="pages">
+            <ul>
+                <li class="home"><a href="../index.html">Home</a></li>
+                <li class="menu-delicias"><a href="../pages/menu.html">Menu</a></li>
+                <li class="comoPedir"><a href="../pages/comoPedir.html">Como hacer un pedido</a></li>
+                <li class="pedido"><a href="../pages/miPedido.html">Mi Pedido</a></li>
+            </ul>
+        </nav>
         <main>
-            <nav class="pages">
-                <ul>
-                    <li class="comoPedir"><a href="/Proyecto-Sabor-de-Pueblo/pages/comoPedir.html">Como hacer un pedido</a></li>
-                    <li class="pedido"><a href="/Proyecto-Sabor-de-Pueblo/pages/miPedido.html">Mi Pedido</a></li>
-                </ul>
-            </nav>
-            <!-- Tarjetas de comidas -->
-            <h2>ADICIONALES DE LA SEMANA</h2>
-            <button>Filtrar por</button>
-            <section class="menu">
-                <div class="menu-tarjetaComida">
-                    <img src="/Proyecto-Sabor-de-Pueblo/image/Criolla.jpg" alt="Comida">
-                    <h3>Bifes a la Criolla</h3>
-                    <p>Ubicación: Urquiza 443</p>
-                    <p>Por encargo</p>
-                    <p>Tiempo de preparacion: 1:30hs</p>
-                    <p>Dias disponibles: Sab - Dom</p>
-                    <p>Info. Adicional...</p>
-                    <section class="comprarMenu">    
-                        <p>$10500</p>
-                        <button>Pedir</button>
-                    </section>
-                </div>
+            <section>
+                <!-- Tarjetas de comidas -->
+                <h2 class="h2-delicias">ADICIONALES DE LA SEMANA</h2>
+                <button class="filtrar">Filtrar por</button>
+                <section class="menu">
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/Hamburguesa.png" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Hamburguesa completa</h3>
+                        <p>Ubicación: Martin Perego 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:25hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
 
-                <div class="menu-tarjetaComida">
-                    <img src="/Proyecto-Sabor-de-Pueblo/image/Criolla.jpg" alt="Comida">
-                    <h3>Bifes a la Criolla</h3>
-                    <p>Ubicación: Urquiza 443</p>
-                    <p>Por encargo</p>
-                    <p>Tiempo de preparacion: 1:30hs</p>
-                    <p>Dias disponibles: Sab - Dom</p>
-                    <p>Info. Adicional...</p>
-                    <section class="comprarMenu">    
-                        <p>$10500</p>
-                        <button>Pedir</button>
-                    </section>
-                </div>
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/pizza.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Pizza (4 quesos)</h3>
+                        <p>Ubicación: San Martin 564</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:30hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
 
-                <div class="menu-tarjetaComida">
-                    <img src="/Proyecto-Sabor-de-Pueblo/image/Criolla.jpg" alt="Comida">
-                    <h3>Bifes a la Criolla</h3>
-                    <p>Ubicación: Urquiza 443</p>
-                    <p>Por encargo</p>
-                    <p>Tiempo de preparacion: 1:30hs</p>
-                    <p>Dias disponibles: Sab - Dom</p>
-                    <p>Info. Adicional...</p>
-                    <section class="comprarMenu">    
-                        <p>$10500</p>
-                        <button>Pedir</button>
-                    </section>
-                </div>
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss1.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Hamburguesa completa</h3>
+                        <p>Ubicación: Martin Perego 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:25hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
 
-                <div class="menu-tarjetaComida">
-                    <img src="/Proyecto-Sabor-de-Pueblo/image/Criolla.jpg" alt="Comida">
-                    <h3>Bifes a la Criolla</h3>
-                    <p>Ubicación: Urquiza 443</p>
-                    <p>Por encargo</p>
-                    <p>Tiempo de preparacion: 1:30hs</p>
-                    <p>Dias disponibles: Sab - Dom</p>
-                    <p>Info. Adicional...</p>
-                    <section class="comprarMenu">    
-                        <p>$10500</p>
-                        <button>Pedir</button>
-                    </section>
-                </div>
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss2.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Pancho</h3>
+                        <p>Ubicación: San Martin 564</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:30hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
 
-                <div class="menu-tarjetaComida">
-                    <img src="/Proyecto-Sabor-de-Pueblo/image/Criolla.jpg" alt="Comida">
-                    <h3>Bifes a la Criolla</h3>
-                    <p>Ubicación: Urquiza 443</p>
-                    <p>Por encargo</p>
-                    <p>Tiempo de preparacion: 1:30hs</p>
-                    <p>Dias disponibles: Sab - Dom</p>
-                    <p>Info. Adicional...</p>
-                    <section class="comprarMenu">    
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss3.jpg" class="img-fluid rounded" alt="Comida rapida">
+                        <h3>Pancho criollo</h3>
+                        <p>Ubicación: Martin Perego 111</p>
+                        <p>Al momento</p>
+                        <p>Tiempo de preparacion: 00:25hs</p>
+                        <p>Dias disponibles: Todos</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
                         <p>$10500</p>
-                        <button>Pedir</button>
-                    </section>
-                </div>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
 
-                <div class="menu-tarjetaComida">
-                    <img src="/Proyecto-Sabor-de-Pueblo/image/Criolla.jpg" alt="Comida">
-                    <h3>Bifes a la Criolla</h3>
-                    <p>Ubicación: Urquiza 443</p>
-                    <p>Por encargo</p>
-                    <p>Tiempo de preparacion: 1:30hs</p>
-                    <p>Dias disponibles: Sab - Dom</p>
-                    <p>Info. Adicional...</p>
-                    <section class="comprarMenu">    
-                        <p>$10500</p>
-                        <button>Pedir</button>
-                    </section>
-                </div>
-            </section>
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/Criolla.jpg" class="img-fluid rounded" alt="Comida">
+                        <h3>Bifes a la Criolla</h3>
+                        <p>Ubicación: Urquiza 443</p>
+                        <p>Por encargo</p>
+                        <p>Tiempo de preparacion: 1:30hs</p>
+                        <p>Dias disponibles: Sab - Dom</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/elaborados1.jpg" class="img-fluid rounded" alt="Comida">
+                        <h3>Pastas con salsa</h3>
+                        <p>Ubicación: Urquiza 443</p>
+                        <p>Por encargo</p>
+                        <p>Tiempo de preparacion: 1:30hs</p>
+                        <p>Dias disponibles: Sab - Dom</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/elaborados3.jpg" class="img-fluid rounded" alt="Comida">
+                        <h3>Asado con cuero</h3>
+                        <p>Ubicación: Urquiza 443</p>
+                        <p>Por encargo</p>
+                        <p>Tiempo de preparacion: 1:30hs</p>
+                        <p>Dias disponibles: Sab - Dom</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/postress3.jpg" class="img-fluid rounded" alt="Comida">
+                        <h3>Postre chocolate</h3>
+                        <p>Ubicación: Urquiza 443</p>
+                        <p>Por encargo</p>
+                        <p>Tiempo de preparacion: 1:30hs</p>
+                        <p>Dias disponibles: Sab - Dom</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss1.jpg" class="img-fluid rounded" alt="Comida">
+                        <h3>Hamburguesa doble</h3>
+                        <p>Ubicación: Urquiza 443</p>
+                        <p>Por encargo</p>
+                        <p>Tiempo de preparacion: 1:30hs</p>
+                        <p>Dias disponibles: Sab - Dom</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+
+                    <div class="menu-tarjetaComida" data-aos="fade-up">
+                        <img src="../image/rapidoss5.jpg" class="img-fluid rounded" alt="Comida">
+                        <h3>Tarta de pollo</h3>
+                        <p>Ubicación: Urquiza 443</p>
+                        <p>Por encargo</p>
+                        <p>Tiempo de preparacion: 1:30hs</p>
+                        <p>Dias disponibles: Sab - Dom</p>
+                        <p>Info. Adicional...</p>
+                        <section class="comprarMenu">    
+                            <p>$10500</p>
+                            <button>Pedir</button>
+                        </section>
+                    </div>
+                </section>
+            </section><br><br>
         </main>
     </div>
 
@@ -124,27 +223,33 @@
         <section class="footer-info">
             <!-- Atajo a numero de whatsApp -->
             <div class="logoWpp">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/Wpp.png" alt="Logo whatsapp">
+                <img src="../image/Wpp.png" alt="Logo whatsapp">
                 <p>Pedí fácil y rápido</p>
             </div>
-            <p class="marca">&copy; GenaGarciaSS</p>
         </section>
+        <p class="marca">&copy; GenaGarciaSS</p>
         <section class="footer-redes">
             <p>Seguinos en nuestras redes y enterate de todo!</p>
             <ul>
                 <li>
                     <a href="https://www.facebook.com">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Fb.png" alt="Facebook">
+                        <img src="../image/Fb.png" alt="Facebook">
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Instagram.png" alt="Instagram">
+                        <img src="../image/Instagram.png" alt="Instagram">
                     </a>
                     <a href="https://www.tiktok.com">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/TikTok.png" alt="Tik Tok">
+                        <img src="../image/TikTok.png" alt="Tik Tok">
                     </a>
                 </li>
             </ul>
         </section>
     </footer> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

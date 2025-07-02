@@ -1,0 +1,45 @@
+.home-footer {
+        height: 7dvh;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: rgb(209, 199, 187);
+        .footer-info {
+            display: flex;
+            font-size: 12px;
+            margin: 5px;
+            img {
+                width: 70px;
+                margin-left: 5px;
+            }
+        }
+        .marca {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 25px;
+            color:rgb(90, 96, 100);
+            justify-content: center;
+        }
+        .footer-redes {
+            display: flex;
+            gap: 10px;
+            p {
+                font-size: 17px;
+                margin-top: 20px;
+            }
+            ul {
+                li {
+                    .footer-redes li {
+                        display: flex;
+                        gap: 8px;
+                        margin-top: 5px;
+                        align-items: center;
+                        img {
+                            width: 40px;
+                            margin-top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }

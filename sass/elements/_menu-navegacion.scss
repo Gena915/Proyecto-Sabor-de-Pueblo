@@ -1,0 +1,20 @@
+.menu-navegacion {
+            ul {
+                display: flex;
+                gap: 2rem;
+                list-style: none;
+                font-size: 12px;
+                font-weight: bold;
+                margin: 30px;
+            }
+            a {
+                font-size: 20px;
+                padding: 1px;
+                text-decoration: none;
+                color: black;
+                background-color: rgba(190, 189, 176, 0.616);
+                :hover {
+                    background-color: rgb(138, 128, 117);
+                }
+            }
+        }

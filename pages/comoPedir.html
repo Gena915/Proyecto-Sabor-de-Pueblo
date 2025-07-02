@@ -4,35 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cómo hacer un pedido | Sabor de Pueblo</title>
-    <link rel="stylesheet" href="/Proyecto-Sabor-de-Pueblo/styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
 
     <header class="encabezado-principal">
         <div class="logoSP-titulo">
-            <a href="/Proyecto-Sabor-de-Pueblo/index.html">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/LogoSP.png" alt="Logo de Sabor de Pueblo">
+            <a href="../index.html">
+                <img src="../image/Logo.png" alt="Logo de Sabor de Pueblo">
             </a>
         </div>
         <h1>COMO HACER UN PEDIDO</h1>
-        <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
+
+        <section class="infoMenu">
+            <nav class="navbar navbar custom-navbar">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="menuNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/menu.html">Menú</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/deliciasSemanales.html">Delicias Semanales</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/miPedido.html">Mi Pedido</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contactanos.html">Contactanos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <p class="slogan">¡El sabor del pueblo directo a tu mesa!</p>
+        </section>
     </header>
 
-    <nav class="pages">
-        <ul style="justify-content: space-between;">
-            <li class="delicias"><a href="/Proyecto-Sabor-de-Pueblo/pages/deliciasSemanales.html">Delicias Semanales</a></li>
-            <li class="pedido"><a href="/Proyecto-Sabor-de-Pueblo/pages/miPedido.html">Mi Pedido</a></li>
-        </ul>
-    </nav>
-    <h2 class="h2-comoPedir">PASO A PASO PARA ENCARGAR TU COMIDA</h2>
+    <div class="bannerPedir">
+        <nav class="pages">
+            <ul style="justify-content: center;">
+                <li class="home"><a href="../index.html">Home</a></li>
+                <li class="menu-original"><a href="../pages/menu.html">Menu</a></li>
+                <li class="delicias"><a href="../pages/deliciasSemanales.html">Delicias Semanales</a></li>
+                <li class="pedido"><a href="../pages/miPedido.html">Mi Pedido</a></li>
+            </ul>
+        </nav>
+        <h2 class="h2-comoPedir">PASO A PASO PARA ENCARGAR TU COMIDA</h2>
 
-    <div class="container">
-        <main class="contenido">
+        <main class="contenido"> 
             <!-- Instrucciones items-->
             <section class="instrucciones">
                 <h3>Instrucciones</h3>
                 <ol>
-                    <li>Explora nuestras comidas (<a href="/Proyecto-Sabor-de-Pueblo/pages/menu.html#elaborados">Elaborados</a>, <a href="/Proyecto-Sabor-de-Pueblo/pages/menu.html#rapidos">Rapidos</a>, <a href="/Proyecto-Sabor-de-Pueblo/pages/menu.html#postres">Postres</a>).</li>
+                    <li>Explora nuestras comidas (<a href="../pages/menu.html#elaborados">Elaborados</a>, <a href="../pages/menu.html#rapidos">Rapidos</a>, <a href="../pages/menu.html#postres">Postres</a>).</li>
                     <li>Elige y Selecciona "Pedir" o Pedí Fácil y Rápido (solo efectivo).</li>
                     <li>Ingresa tus datos (Información de entrega).</li>
                     <li>Confirma Pedido (Te enviaremos un mensaje con el tiempo estimado de entrega).</li>
@@ -55,27 +81,29 @@
         <section class="footer-info">
             <!-- Atajo a numero de whatsApp -->
             <div class="logoWpp">
-                <img src="/Proyecto-Sabor-de-Pueblo/image/Wpp.png" alt="Logo whatsapp">
+                <img src="../image/Wpp.png" alt="Logo whatsapp">
                 <p>Pedí fácil y rápido</p>
             </div>
-            <p class="marca">&copy; GenaGarciaSS</p>
         </section>
+        <p class="marca">&copy; GenaGarciaSS</p>
         <section class="footer-redes">
             <p>Seguinos en nuestras redes y enterate de todo!</p>
             <ul>
                 <li>
                     <a href="https://www.facebook.com">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Fb.png" alt="Facebook">
+                        <img src="../image/Fb.png" alt="Facebook">
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/Instagram.png" alt="Instagram">
+                        <img src="../image/Instagram.png" alt="Instagram">
                     </a>
                     <a href="https://www.tiktok.com">
-                        <img src="/Proyecto-Sabor-de-Pueblo/image/TikTok.png" alt="Tik Tok">
+                        <img src="../image/TikTok.png" alt="Tik Tok">
                     </a>
                 </li>
             </ul>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

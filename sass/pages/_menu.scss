@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    // Header
+    .bannerMenu {
+        background-image: url('../image/fondo1.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        // pages
+        // menu-navegacion
+        #elaborados {
+            .h2-comidas {
+                text-align: center;
+                font-size: 40px;
+                color: rgb(231, 225, 210);
+            }
+            // tipos-comida
+        }
+        #rapidos {
+            .h2-comidas {
+                text-align: center;
+                font-size: 40px;
+                color: rgb(231, 225, 210);
+            }
+            // tipos-comida
+        }
+        #postres {
+            .h2-comidas {
+                text-align: center;
+                font-size: 40px;
+                color: rgb(231, 225, 210);
+            }
+            // tipos-comida
+        }
+    }
+    // footer
+}

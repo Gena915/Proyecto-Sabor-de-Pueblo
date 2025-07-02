@@ -1,0 +1,42 @@
+.menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            row-gap: 100px;
+            margin: 15px 50px;
+            .menu-tarjetaComida {
+                width: 450px;
+                height: 500px;
+                padding: 5px;
+                background-color: rgba(180, 165, 140, 0.85);
+                border-radius: 1%;
+                font-weight: bold;
+            }
+            .menu h3 {
+                font-size: 25px;
+            }
+            .menu p {
+                font-size: 12px;
+            }
+            .menu img {
+                width: 57%;
+                height: 48%;
+                border-radius: 3%;
+            }
+            .comprarMenu {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5px;
+                p {
+                    font-weight: bold;
+                    font-size: 25px;
+                    color: rgb(66, 47, 16);
+                }
+                button {
+                    margin: 5px;
+                    padding: 0 8px 0 8px;
+                    border-color: rgb(161, 159, 156);
+                    background-color: rgb(133, 132, 130);
+                }
+            }
+        }

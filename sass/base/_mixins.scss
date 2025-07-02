@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@mixin display-centrar ($display, $flex-wrap, $align-items, $justify-content) {
+    display: $display;
+    flex-wrap: $flex-wrap;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin h1-styles ($font-s, $font-f, $color, $bg-color) {
+    font-size: $font-s;
+    font-family: $font-f;
+    color: $color;
+    background-color: $bg-color;
+}
+
+@mixin img-styles ($width, $height, $border-r ) {
+    width: $width;
+    height: $height;
+    border-radius: $border-r;
+}
+

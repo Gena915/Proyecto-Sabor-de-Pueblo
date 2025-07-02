@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    // LLamar a header
+    .bannerDelicias {
+        background-image: url('../image/fondo1.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        // LLamar a pages
+        .h2-delicias {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(231, 225, 210);
+        }
+        .filtrar {
+            margin: 15px 50px;
+        }
+        // LLamar a Menu
+    }
+    // LLamar al footer
+}
